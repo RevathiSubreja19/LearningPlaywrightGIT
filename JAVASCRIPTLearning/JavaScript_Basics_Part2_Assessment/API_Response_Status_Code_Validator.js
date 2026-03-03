@@ -27,4 +27,4 @@ switch (statuscode)
     break; 
 
     default: console.log("UNKNOWN - Unhandled status code"); 
-}
+} 
