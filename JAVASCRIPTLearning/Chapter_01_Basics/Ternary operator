@@ -1,0 +1,5 @@
+let age = 17;
+
+let will_vote = age>=18 ? "Eligible to vote": "Minor, cannot vote";
+console.log(will_vote);
+console.log(typeof(age));
