@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "Minimal repository for Playwright experiments.",
   "main": "new.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module" ,
   "devDependencies": {
-    "@playwright/test": "^1.58.2"
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.5"
   }
+  
 }
