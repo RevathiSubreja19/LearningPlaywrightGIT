@@ -5,6 +5,8 @@
 // Return all unique error codes
  let responses = [200, 201, 404, 500, 404, 200, 503];
 
+ console.log("Is all responses are successfull : "+ responses.every(r => r>=200 && r<=299))
+
  for(let i=0;i<responses.length;i++)
  {
     if((responses[i]>=200) && (responses[i]<=299))
@@ -16,3 +18,5 @@
     
  }
  console.log("FIRST NON-Sucess code is " + responses.find(s=> s>299))
+
+ console.log(new Set(responses))
