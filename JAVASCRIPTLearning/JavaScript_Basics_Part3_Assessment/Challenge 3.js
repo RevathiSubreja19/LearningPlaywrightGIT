@@ -1,24 +1,25 @@
 // <!-- Normalize Locator Error Messages
 // Given a raw Playwright error message string, write a function that 
-// trims extra spaces, converts the message to lowercase, collapses multiple spaces into a single space, and prints a category. Use `TIMEOUT` if the normalized message contains `"timeout"`, `LOCATOR` if it contains `"locator"`, otherwise `GENERAL`. -->
+// trims extra spaces, converts the message to lowercase, collapses 
+// multiple spaces into a single space, and prints a category. 
+// Use `TIMEOUT` if the normalized message contains `"timeout"`, 
+// `LOCATOR` if it contains `"locator"`, otherwise `GENERAL`. -->
 
 
 
 function challenge3(rawMessage){
+    // trim, collapse consecutive whitespace, and lowercase
+    let normalized = rawMessage.trim().replace(/\s+/g, ' ').toLowerCase()
+    console.log(`Normalized: ${normalized}`)
 
-let rawMes = rawMessage.trim()
-//console.log(rawMes)
-let NormalizedMessage = rawMes.toLowerCase()
-console.log(`Normalized: ${NormalizedMessage}`)
+    if (normalized.includes('timeout'))
+        console.log('Category: TIMEOUT')
+    else if (normalized.includes('locator'))
+        console.log('Category: LOCATOR')
+    else
+        console.log('Category: GENERAL')
 
-if(NormalizedMessage.includes("timeout"))
-    console.log("Category: TIMEOUT")
-else if(NormalizedMessage.includes("locator"))
-    console.log("Category: LOCATOR")
-else 
-    console.log("Category: GENERAL")
-
-return true
+    return normalized
 }
 
-console.log(challenge3(" Locator not found after TIMEOUT "))
+console.log(challenge3(" Locator not found after  TIMEOUT "))

@@ -8,11 +8,11 @@
 
 function challenge4(allBrowsers,blockedBrowsers)
 {
-    let runnableBrowsers = allBrowsers.filter(b => !blockedBrowsers.includes(blockedBrowsers));
-    console.log(`runnable: ${runnableBrowsers}`)
-    console.log(`blocked: ${blockedBrowsers}`)
-    runnableBrowsers.join(blockedBrowsers)
-    console.log(`plan: "Run on: ${runnableBrowsers} | Skip: ${blockedBrowsers}"`)
+    let runnableBrowsers = allBrowsers.filter(b => !blockedBrowsers.includes(b));
+    console.log(`Runnable: ${runnableBrowsers}`)
+    console.log(`Blocked: ${blockedBrowsers}`)
+    
+    console.log(`Plan: "Run on: ${runnableBrowsers} | Skip: ${blockedBrowsers}"`)
     return true
 }
 
