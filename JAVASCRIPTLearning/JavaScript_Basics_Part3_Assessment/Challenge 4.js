@@ -12,8 +12,8 @@ function challenge4(allBrowsers,blockedBrowsers)
     console.log(`Runnable: ${runnableBrowsers}`)
     console.log(`Blocked: ${blockedBrowsers}`)
     
-    console.log(`Plan: "Run on: ${runnableBrowsers} | Skip: ${blockedBrowsers}"`)
-    return true
+    return `Plan: "Run on: ${runnableBrowsers} | Skip: ${blockedBrowsers}"`
+    // true
 }
 
 console.log(challenge4(["chromium", "firefox", "webkit"],["firefox"]))

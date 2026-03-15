@@ -9,7 +9,7 @@
 
 function challenge3(rawMessage){
     // trim, collapse consecutive whitespace, and lowercase
-    let normalized = rawMessage.trim().replace(/\s+/g, ' ').toLowerCase()
+    let normalized = rawMessage.trim().replaceAll('  ',' ').toLowerCase()
     console.log(`Normalized: ${normalized}`)
 
     if (normalized.includes('timeout'))
