@@ -17,8 +17,9 @@
 // console.log(test8)
 
 // Array.from
-
-// console.log(Array.from("Revathi"))
+let char = "hello";
+console.log(Array.from("hello"));
+ console.log(Array.from("Revathi"))
 
 // console.log("**************************************************************")
 //let test9 = "Revathi Subreja"
