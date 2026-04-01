@@ -18,3 +18,15 @@ obj.timeout = 5000
 
 console.log(obj)
 delete obj.config
+
+console.log(obj)
+console.log('age' in employee)
+console.log(employee.hasOwnProperty('tegts'))
+
+for(let i in employee)
+{
+    console.log(`${i}: ${employee[i]}`)
+}
+console.log(Object.keys(obj))
+console.log(Object.values(obj))
+console.log(Object.entries(obj))
