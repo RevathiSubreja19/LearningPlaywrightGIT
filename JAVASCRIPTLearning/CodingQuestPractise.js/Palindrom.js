@@ -35,3 +35,23 @@ let str3 = "Rama";
 console.log(isPalindrome(str1));
 console.log(isPalindrome(str2));
 console.log(isPalindrome(str3));
+
+
+console.log("--------------Myway---------------------------")
+
+function isPalindrom(str){
+
+var rev = ''
+for(var i=str.length-1;i>=0;i--)
+  {
+    
+    rev = rev + str[i];
+  }
+    console.log(rev)
+if (rev.toLowerCase()==str.toLowerCase())
+  console.log("Is Palindrom")
+  else
+    console.log("Not a Palindrom")
+    }
+
+isPalindrom("SCs")

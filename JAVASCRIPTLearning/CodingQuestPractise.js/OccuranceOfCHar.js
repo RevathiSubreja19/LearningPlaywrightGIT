@@ -1,10 +1,19 @@
-let string = "Revathi Subreja"
+function character(str,char){
 
-
-let count =0
-for(let i=0;i<string.length-1;i++)
-{
-    count++
-    i = string.indexOf('a',i+1)
+var count =0;
+for(var i=0;i<str.length;i++)
+  {
+    str = str.toLowerCase();
+    i = str.indexOf(char,i);
+    if(i!=-1)
+    count++;
+    else
+      break;
+  }
+return count;
 }
-console.log(`Number of occurance of the char 'a' is: ${count}`);
+
+console.log(character("tesdfghrrrrr","r"));
+            
+            
+

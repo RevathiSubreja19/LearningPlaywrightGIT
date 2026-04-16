@@ -20,6 +20,6 @@ for(let row of multiarr)
     {
         process.stdout.write(col+ " ")
     }
-    console.log(" ")
+    console.log("")
 }
 
