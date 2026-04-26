@@ -2,8 +2,8 @@ let str = "revathi"
 let str2 = str.repeat(2)
 console.log(str2)
 
-let padstr = str.padStart(5,'*')
-console.log(padstr)
+let str3 = str.padStart(5,'*')
+console.log(str3)
 
 console.log("-------------------------")
 
@@ -25,3 +25,6 @@ console.log(masked)
 
 let sen = " i am upset"
 console.log(sen.replaceAll(" ",""))
+
+console.log("------------------------------------")
+console.log("Subreja".padStart(4,"*"));

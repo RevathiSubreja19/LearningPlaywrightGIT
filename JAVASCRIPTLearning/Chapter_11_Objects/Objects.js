@@ -9,7 +9,12 @@ let employee = {
 
 // console.log(employee["name"]);
 // console.log(employee.age = 32 );
-// console.log(employee);
+
+employee.Experience = 10
+employee.Location= "Tirunelveli",
+console.log(employee);
+delete employee.phone
+console.log(employee);
 
 // let obj = {};
 // obj.config = "text"
@@ -20,7 +25,7 @@ let employee = {
 // delete obj.config
 
 // console.log(obj)
-// console.log('age' in employee)
+console.log('age ' in employee)
 // console.log(employee.hasOwnProperty('tegts'))
 
 // for(let i in employee)
@@ -31,7 +36,7 @@ let employee = {
 // console.log(Object.values(obj))
 // console.log(Object.entries(obj))
 
-for(let r in employee)
-{
-    console.log(`${r}: ${employee[r]}`)
-}
+// for(let r in employee)
+// {
+//     console.log(`${r}: ${employee[r]}`)
+// }
