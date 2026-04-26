@@ -10,9 +10,11 @@
   "type": "module",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.3.5"
+    "@types/node": "^25.3.5",
+    "tsx": "^4.21.0"
   },
   "dependencies": {
     "ts-node": "^10.9.2"
   }
+  
 }
