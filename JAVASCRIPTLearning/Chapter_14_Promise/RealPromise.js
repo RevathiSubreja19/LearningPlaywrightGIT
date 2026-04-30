@@ -24,7 +24,7 @@ function clickLogin() {
 
 openBrowser()
     .then(function (msg) {
-        console.log("Step 1", msg);
+        console.log("Step 1 :", msg);
         return goToLogin();
     }).then(function (msg) {
         console.log("Step 2 :", msg);
