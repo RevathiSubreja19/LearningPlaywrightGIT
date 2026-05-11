@@ -3,7 +3,7 @@ import {BaseURL as url_QA} from "../Chapter_14_Promise/base2.js"
 
 console.log(url_dev)
 console.log(url_QA)
-console.log(basefunc("Practising export functionality"))
+console.log(basefunc("Practising export functionality"))    
 console.log(employee)
 
 
